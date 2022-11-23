@@ -1,0 +1,5 @@
+CATALOG { background-color: #ffffff; width: 100%; }
+CD { display: block; margin-bottom: 30pt; margin-left: 20; }
+TITLE { color: “red”; font-size: 20pt; }
+ARTIST { color: #00FF00; font-size: 20pt; }
+COUNTRY,PRICE,YEAR,COMPANY { display: blue; color: #000000; margin-left: 20pt; }

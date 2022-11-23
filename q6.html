@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            #player{
+    position:absolute;
+}
+#stage{
+    width:500px;
+    height:500px;
+    border:solid 1px #000;
+}
+        </style>
+        <script>
+           $('#stage').click(function() {
+    $('#header').html('Image is moving!');
+});
+
+$('#stage').click(function(e){
+    $('#player').animate({
+        top: e.pageY,
+        left: e.pageX
+     }, 800);
+});
+        </script>
+    </head>
+    <body>
+<div id="header"></div>
+<div id="stage"></div>
+<img id="player" src="http://placekitten.com/64/64"/>
+</body>
+</html>

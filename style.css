@@ -1,0 +1,33 @@
+h1{
+	text-align:center;
+	color:Blue;
+}
+
+h2{
+text-align:center;
+color:red;
+letter-spacing:justify;
+}
+
+p{
+text-indent:10px;
+color:maroon;
+text-align:"justify";
+font-size:10pt;
+line-height:3.0;
+}
+
+body{
+background-color:00ccff;
+font:9pt/1.3em verdana,arial;
+}
+
+font{
+color:maroon;
+face:impact;
+}
+
+h4{
+text-align:right;
+color:navy;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function show() {
+        var result=eval(document.getElementById("num").value);
+        document.getElementById("answer").value = result;
+      }
+    </script>
+  </head>
+  <body style="font-size:20px;">
+    <h1>The Evaluation of <br> Arithmetic Expression</h1>
+    <hr>
+    Enter an expression to evaluate: <br><input id="num" name="expression" />
+    <span style="margin-right:20px">
+    <button onclick="show()">Evaluate</button></span>
+    <a href target="_self">
+        <button> Reset</button>
+    </a><br><br>    
+    Results:<br> <input id="answer" />
+  </body>
+</html>

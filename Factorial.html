@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function show() {
+        var i, no, fact;
+        fact = 1;
+        no = Number(document.getElementById("num").value);
+        for (i = 1; i <= no; i++) {
+          fact = fact * i;
+        }
+        document.getElementById("answer").value = fact;
+      }
+    </script>
+  </head>
+  <body style="text-align:center;font-size:20px;">
+    <h1>Calculation of Factorial</h1>
+    Enter an input value: <input id="num" /><br><br>
+    <button onclick="show()">Calc Factorial</button><br><br>
+    Results: <input id="answer" />
+  </body>
+</html>

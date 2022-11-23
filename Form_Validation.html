@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        function formValidation() {
+            var fname = document.registration.username;
+            var lname = document.registration.username;
+            var uemail = document.registration.email;
+            var uphone = document.registration.phone;
+            var uadd = document.registration.address;
+            var ucountry = document.registration.country;
+            if (allLetter(fname)) {
+                if (allLetter(lname)) {
+                    if (alphanumeric(uadd)) {
+                        if (countryselect(ucountry)) {
+                            if (ValidateEmail(uemail)) {
+                                if (Validatephone(inputxxt)) {
+
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        function allLetter(fname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(fname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('FirstName must have alphabet characters only');
+fname.focus();
+return false;
+}
+}
+    </script>
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <h1></h1>
+    <form name='registration' onSubmit="return formValidation();">
+        <label for="username"> First Name </label>
+        <input type="text" name="username" size="20" />
+        <p />
+        <label for="username"> Last Name </label>
+        <input type="text" name="username" size="20" />
+        <p />
+        <label for="email">EMail </label>
+        <input type="text" name="email" size="30" />
+        <p />
+        <label for="text">Phone </label>
+        <input type="text" name="phone" size="30" />
+        <p />
+        <label for="address">Address:</label>
+        <textarea name="desc" id="desc"></textarea>
+        <p />
+        <label for="country">Country:</label>
+        <select name="country">
+            <option selected="" value="Default">[choose yours]</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+        </select>
+        <p />
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+</body>
+
+</html>

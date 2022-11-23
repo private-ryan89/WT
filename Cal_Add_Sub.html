@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function add() {
+        var a=Number(document.getElementById("num").value);
+        var b=Number(document.getElementById("num1").value);
+       var c = a+b;
+          document.getElementById("answer").value =c;
+      }
+        function sub() {
+        var a=Number(document.getElementById("num").value);
+        var b=Number(document.getElementById("num1").value);
+       var c = a-b;
+          document.getElementById("answer").value =c;
+      }
+    </script>
+  </head>
+  <body style="font-size:20px; background-color:lightblue;">
+    <h1 style="color:maroon;">Different Calculations of Two Numbers</h1>
+    Enter Number 1 <input id="num"/><br>
+    Enter Number 2 <input id="num1"/><br>
+    The Result is ::: <input id="answer"/><br>
+    <span style="margin-right:130px">
+    </span>
+    <span style="margin-right:20px">
+    <button style= width:2% onclick="add()">+</button></span>
+        <button style= width:2% onclick="sub()"> -</button>
+  </body>
+</html>
+ 
